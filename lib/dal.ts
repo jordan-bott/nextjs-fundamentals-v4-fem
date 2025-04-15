@@ -40,7 +40,6 @@ export async function getIssues() {
       with: {
         user: true,
       },
-      orderBy: (issues, { desc }) => [desc(issues.createdAt)],
     })
     return result
   } catch (error) {
